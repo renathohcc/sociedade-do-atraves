@@ -10,10 +10,20 @@ public class PlayerController : MonoBehaviour
     public Animator myAnim;
     private float hMove;
     private float vMove;
+
+    public static PlayerController instance;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+       if(instance == null){
+            instance = this;
+        }
+        else{
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject); 
     }
 
     // Update is called once per frame
@@ -38,5 +48,9 @@ public class PlayerController : MonoBehaviour
             myAnim.SetFloat("lastMoveX", hMove);
             myAnim.SetFloat("lastMoveY", vMove);
         }
+
+        
     }
+
+    
 }
