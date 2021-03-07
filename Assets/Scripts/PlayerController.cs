@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D theRB;
     public float moveSpeed;
     public FixedJoystick joystick;
+    public Animator myAnim;
+    private float hMove;
+    private float vMove;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,10 +19,24 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Movimentacao do player Setas
-        //theRB.velocity = new Vector2 (Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"))* moveSpeed;
+        // Variaveis de Movimentacao
+        //h = Input.GetAxisRaw("Horizontal");
+        //v = Input.GetAxisRaw("Vertical");
 
-        // Movimentacao do player Joystick Mobile
-        theRB.velocity = new Vector2 (joystick.Horizontal, joystick.Vertical)* moveSpeed;
+        hMove = joystick.Horizontal;
+        vMove = joystick.Vertical;
+
+        // Movimentacao do player
+        theRB.velocity = new Vector2 (hMove, vMove)* moveSpeed;
+
+        // Animacao do Player
+        myAnim.SetFloat("moveX", theRB.velocity.x);
+        myAnim.SetFloat("moveY", theRB.velocity.y);
+
+        if(hMove == 1 || hMove == -1 || vMove == 1 || vMove == -1)
+        {
+            myAnim.SetFloat("lastMoveX", hMove);
+            myAnim.SetFloat("lastMoveY", vMove);
+        }
     }
 }

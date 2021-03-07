@@ -1823,6 +1823,7 @@ GameObject:
   - component: {fileID: 150445030}
   - component: {fileID: 150445029}
   - component: {fileID: 150445028}
+  - component: {fileID: 150445033}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1845,6 +1846,7 @@ MonoBehaviour:
   theRB: {fileID: 150445030}
   moveSpeed: 5
   joystick: {fileID: 483388120}
+  myAnim: {fileID: 150445033}
 --- !u!58 &150445029
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1947,6 +1949,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &150445033
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150445027}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f34125b34453e3d43a03da1afecebcde, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &375551859
 GameObject:
   m_ObjectHideFlags: 0
