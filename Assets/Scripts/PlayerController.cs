@@ -49,7 +49,6 @@ public class PlayerController : MonoBehaviour
             myAnim.SetFloat("lastMoveY", vMove);
         }
 
-        
     }
 
     
