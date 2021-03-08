@@ -12,10 +12,12 @@ public class PlayerController : MonoBehaviour
     private float vMove;
 
     public static PlayerController instance;
+    public string areaTransitionName;
 
     // Start is called before the first frame update
     void Start()
     {
+        // Não duplicar o player ao trocar de cenas
        if(instance == null){
             instance = this;
         }
@@ -23,15 +25,15 @@ public class PlayerController : MonoBehaviour
             Destroy(gameObject);
         }
 
-        DontDestroyOnLoad(gameObject); 
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
         // Variaveis de Movimentacao
-        //h = Input.GetAxisRaw("Horizontal");
-        //v = Input.GetAxisRaw("Vertical");
+        //hMove = Input.GetAxisRaw("Horizontal");
+        //vMove = Input.GetAxisRaw("Vertical");
 
         hMove = joystick.Horizontal;
         vMove = joystick.Vertical;
