@@ -2,16 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AreaEntrance : MonoBehaviour
+public class CanvasUpdate : MonoBehaviour
 {
-    public string nameTransition;
+    public FixedJoystick joystick2;
     // Start is called before the first frame update
     void Start()
     {
-        if(nameTransition == PlayerController.instance.areaTransitionName){
-            PlayerController.instance.transform.position = transform.position;
-        }
-
+        PlayerController.instance.joystick = joystick2;
     }
 
     // Update is called once per frame

@@ -13970,6 +13970,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2095052286044738350, guid: 7f1ae304e91f4544c8402af375a73cf0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2095052286044738350, guid: 7f1ae304e91f4544c8402af375a73cf0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.42
+      objectReference: {fileID: 0}
     - target: {fileID: 4924216779497948050, guid: 7f1ae304e91f4544c8402af375a73cf0,
         type: 3}
       propertyPath: m_RootOrder
@@ -13978,12 +13988,12 @@ PrefabInstance:
     - target: {fileID: 4924216779497948050, guid: 7f1ae304e91f4544c8402af375a73cf0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.52
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4924216779497948050, guid: 7f1ae304e91f4544c8402af375a73cf0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.08
+      value: 7.46
       objectReference: {fileID: 0}
     - target: {fileID: 4924216779497948050, guid: 7f1ae304e91f4544c8402af375a73cf0,
         type: 3}
@@ -14152,6 +14162,25 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1584379061, guid: 2f5c0691971cef34d99aa5b8381a521a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2f5c0691971cef34d99aa5b8381a521a, type: 3}
+--- !u!1 &5641675500267048833 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5641675500325101102, guid: 2f5c0691971cef34d99aa5b8381a521a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5641675500267048832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5641675500267048834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5641675500267048833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f244ff5fe9e406d4e80eb767896dd512, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joystick2: {fileID: 743043705}
 --- !u!1001 &7594292663076485294
 PrefabInstance:
   m_ObjectHideFlags: 0

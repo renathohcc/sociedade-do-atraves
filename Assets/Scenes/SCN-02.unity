@@ -253,6 +253,7 @@ GameObject:
   - component: {fileID: 488197932}
   - component: {fileID: 488197931}
   - component: {fileID: 488197930}
+  - component: {fileID: 488197934}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -340,6 +341,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &488197934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488197929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f244ff5fe9e406d4e80eb767896dd512, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joystick2: {fileID: 1745685577}
 --- !u!1 &505532049
 GameObject:
   m_ObjectHideFlags: 0
@@ -8866,6 +8880,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
+--- !u!114 &1745685577 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+    type: 3}
+  m_PrefabInstance: {fileID: 1745685576}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6712467028274398165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8876,12 +8902,12 @@ PrefabInstance:
     - target: {fileID: 2095052286044738350, guid: 7f1ae304e91f4544c8402af375a73cf0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.01
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 2095052286044738350, guid: 7f1ae304e91f4544c8402af375a73cf0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.24
+      value: 1.92
       objectReference: {fileID: 0}
     - target: {fileID: 4924216779497948050, guid: 7f1ae304e91f4544c8402af375a73cf0,
         type: 3}
@@ -8891,12 +8917,12 @@ PrefabInstance:
     - target: {fileID: 4924216779497948050, guid: 7f1ae304e91f4544c8402af375a73cf0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.54
+      value: -0.52
       objectReference: {fileID: 0}
     - target: {fileID: 4924216779497948050, guid: 7f1ae304e91f4544c8402af375a73cf0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.41
+      value: -7.41
       objectReference: {fileID: 0}
     - target: {fileID: 4924216779497948050, guid: 7f1ae304e91f4544c8402af375a73cf0,
         type: 3}

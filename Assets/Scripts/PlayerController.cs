@@ -59,8 +59,8 @@ public class PlayerController : MonoBehaviour
 
     public void setBounds(Vector3 botLeft, Vector3 topRight)
     {
-        bottomLeftLimit = botLeft + new Vector3(.5f, 1f, 0f);
-        topRightLimit = topRight + new Vector3 (-.5f, -1f, 0f);
+        bottomLeftLimit = botLeft + new Vector3(.5f, .8f, 0f);
+        topRightLimit = topRight + new Vector3 (-.5f, -.8f, 0f);
     }
 
    
