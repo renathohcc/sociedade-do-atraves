@@ -8,11 +8,14 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public FixedJoystick joystick;
     public Animator myAnim;
-    private float hMove;
-    private float vMove;
+    public float hMove = 0f;
+    public float vMove = 0f;
 
     public static PlayerController instance;
     public string areaTransitionName;
+
+    private Vector3 bottomLeftLimit;
+    private Vector3 topRightLimit;
 
     // Start is called before the first frame update
     void Start()
@@ -50,8 +53,17 @@ public class PlayerController : MonoBehaviour
             myAnim.SetFloat("lastMoveX", hMove);
             myAnim.SetFloat("lastMoveY", vMove);
         }
-
+        //Keep the Player in the Map
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.x, topRightLimit.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.y, topRightLimit.y), transform.position.z);
     }
+
+    public void setBounds(Vector3 botLeft, Vector3 topRight)
+    {
+        bottomLeftLimit = botLeft + new Vector3(.5f, 1f, 0f);
+        topRightLimit = topRight + new Vector3 (-.5f, -1f, 0f);
+    }
+
+   
 
     
 }
